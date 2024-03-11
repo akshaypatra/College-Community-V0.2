@@ -145,7 +145,7 @@ export default function Annoucements() {
   return (
     <>
     <div className="AnnoucementsectionHeader">
-    <h1>Annoucements</h1>
+    <h1>Announcements</h1>
       <input 
                 type="text"
                 className="AnnoucementSearch"
