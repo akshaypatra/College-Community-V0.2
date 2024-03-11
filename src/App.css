@@ -9,6 +9,7 @@ ul li{
 /* 1.1 Annoucement section */
 .AnnoucementsectionHeader{
   display: flex;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
 }
@@ -26,6 +27,7 @@ ul li{
   background-color:rgb(255, 255, 255) ;
 }
 h1{
+  margin-left:5vw;
   margin-top:1vh;
   text-align: center;
 }
