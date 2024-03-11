@@ -149,7 +149,7 @@ export default function Annoucements() {
       <input 
                 type="text"
                 className="AnnoucementSearch"
-                placeholder="  Search Annoucements"
+                placeholder="  Search Announcements"
                 value={searchTerm}
                 onChange={handleSearch}
             />
