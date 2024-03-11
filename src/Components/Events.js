@@ -43,9 +43,84 @@ export default function Events() {
   useEffect(() => {
     const fetchAnnouncements = async () => {
       try {
-        const response = await fetch("/Events.json");
-        const jsonData = await response.json();
-        console.log(jsonData);
+    //     const response=await fetch('/Events.json')
+    //     if (!response.ok) {
+    //   throw new Error('Network response was not ok');
+    // }
+    //     const jsonData = await response.json();
+    const jsonData=[
+      {
+        "id": "1",
+        "title": "Dance Competition",
+        "description": "Participate in the persona fest and show your dance skills",
+        "date": "2024-03-01",
+        "link":"www.google.com"
+      },
+      {
+        "id": "2",
+        "title": "Coding Workshop",
+        "description": "Join our coding workshop and enhance your programming skills",
+        "date": "2024-03-05",
+        "link":"www.google.com"
+      },
+      {
+        "id": "3",
+        "title": "Career Counseling Session",
+        "description": "Explore career options with our expert counselors. Don't miss this opportunity!",
+        "date": "2024-03-10",
+        "link":"www.google.com"
+      },
+      {
+        "id": "4",
+        "title": "Art Exhibition",
+        "description": "Visit the art exhibition featuring works from talented students. A celebration of creativity!",
+        "date": "2024-03-15",
+        "link":"www.google.com"
+      },
+      {
+        "id": "5",
+        "title": "Sports Day",
+        "description": "Get ready for a day filled with exciting sports activities. Show your team spirit!",
+        "date": "2024-03-20",
+        "link":"www.google.com"
+      },
+      {
+        "id": "6",
+        "title": "Guest Lecture on Science and Technology",
+        "description": "Renowned scientists will share their insights. A must-attend for science enthusiasts!",
+        "date": "2024-03-25",
+        "link":"www.google.com"
+      },
+      {
+        "id": "7",
+        "title": "Music Concert",
+        "description": "Experience the magic of music at our upcoming concert. Join us for a melodious evening!",
+        "date": "2024-03-30",
+        "link":"www.google.com"
+      },
+      {
+        "id": "8",
+        "title": "Book Club Meeting",
+        "description": "Discuss and share your thoughts on the latest book. All book lovers welcome!",
+        "date": "2024-04-01",
+        "link":"www.google.com"
+      },
+      {
+        "id": "9",
+        "title": "Environmental Awareness Campaign",
+        "description": "Join us in spreading awareness about environmental issues. Let's make a positive impact!",
+        "date": "2024-04-05",
+        "link":"www.google.com"
+      },
+      {
+        "id": "10",
+        "title": "Science Fair",
+        "description": "Explore innovative projects and experiments at our annual science fair. Unleash your curiosity!",
+        "date": "2024-04-10",
+        "link":"www.google.com"
+      }
+    ];  
+        //console.log(jsonData);
         setEvents(jsonData);
         setFilteredData(jsonData);
       } catch (error) {
@@ -85,19 +160,19 @@ export default function Events() {
     </div>
     <div className="EventSection">
           {events ? (
-            <ul class="Eventlistitem">
+            <ul className="Eventlistitem">
               {filteredData.map((item) => (
                 <li key={item.id}>
-                  <div class={`card text-bg-${randomColorGenerator(
+                  <div className={`card text-bg-${randomColorGenerator(
                     colorArray
                   )} mb-3`} style={{width: "18rem",height:"14rem"}}>
-                    <div class="card-body">
-                      <h5 class="card-title">{item.title}</h5>
-                      <p class="card-text">
+                    <div className="card-body">
+                      <h5 className="card-title">{item.title}</h5>
+                      <p className="card-text">
                         {item.description}<br/>
                         Date:  {item.date}
                       </p>
-                      <a href={`${item.link}`} class="btn btn-primary" style={{bottom:"0px",backgroundColor:""}}>
+                      <a href={`${item.link}`} className="btn btn-primary" style={{bottom:"0px",backgroundColor:""}}>
                         Register
                       </a>
                     </div>
