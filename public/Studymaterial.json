@@ -1,0 +1,32 @@
+[
+    {
+        "id":"1",
+        "Subject":"Computer Networks",
+        "description":"five units",
+        "Link":"https://drive.google.com/drive/folders/1AeC1Y7mj_yh0Ui77kF-PNEOl6jZgNA_g"
+    },
+    {
+        "id":"2",
+        "Subject":"Theory of Computation",
+        "description":"five units",
+        "Link":"https://drive.google.com/drive/folders/1D4ib4-ZINOeWVuPyTbpDtbAHRcN0Ym8Y"
+    },
+    {
+        "id":"3",
+        "Subject":"Integral Calculus and Transform techniques",
+        "description":"five units",
+        "Link":"https://drive.google.com/drive/folders/1ShGTtoxCzIggqf8P-pVJRdOlVpJ_okuA"
+    },
+    {
+        "id":"4",
+        "Subject":"Software  Engineering and Project Managament",
+        "description":"five units",
+        "Link":"https://drive.google.com/drive/folders/15p8Xc_zhjlKFcx1nfBZsOn7qOkbdeeRb"
+    },
+    {
+        "id":"5",
+        "Subject":"Advance data structures",
+        "description":"five units",
+        "Link":"https://drive.google.com/drive/folders/1i0VIdJInykUtirqwEsy7SY4W3xoaCmmD"
+    }
+]
