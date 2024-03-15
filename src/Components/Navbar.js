@@ -1,7 +1,9 @@
 import React from "react";
-import { Link } from "react-router-dom";
+import { Link ,useLocation} from "react-router-dom";
 
 export default function Navbar() {
+
+  let location=useLocation();
   return (
     <nav className="navbar bg-dark border-bottom border-body" data-bs-theme="dark">
       <div className="container-fluid">
@@ -21,16 +23,16 @@ export default function Navbar() {
         </button>
         <div className="collapse navbar-collapse" id="navbarNavAltMarkup">
           <div className="navbar-nav">
-            <Link className="nav-link " aria-current="page" to="/">
+            <Link className={`nav-link  ${location.pathname==='/'?"active":""}`} aria-current="page" to="/">
               Home
             </Link>
-            <Link className="nav-link" to="/connect">
+            <Link className={`nav-link  ${location.pathname==='/connect'?"active":""}`} to="/connect">
               Connect
             </Link>
-            <Link className="nav-link" to="/studymaterial">
+            <Link className={`nav-link  ${location.pathname==='/studymaterial'?"active":""}`} to="/studymaterial">
               Study Material
             </Link>
-            <Link className="nav-link " to="/helpandsupport" >
+            <Link className={`nav-link  ${location.pathname==='/helpandsupport'?"active":""}`} to="/helpandsupport" >
               Help & Support
             </Link>
           </div>
