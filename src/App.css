@@ -247,3 +247,34 @@ h1{
   text-align: center;
 }
 
+ /* 3.query section */
+
+ .queryBoxheader{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+ }
+ .queryBoxheader input{
+  width:18rem;
+  text-align: center;
+}
+
+.QueryBox{
+  display: flex;
+  flex-direction: column;
+  text-align: start;
+  justify-content: center;
+  align-items: center;
+  margin-top: 3vh;
+  overflow: scroll;
+
+}
+.Querylistitem{
+  display: flex;
+  flex-direction: column;
+
+  
+  max-height:40vh;
+  
+}

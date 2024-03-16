@@ -5,7 +5,7 @@ export default function Navbar() {
 
   let location=useLocation();
   return (
-    <nav className="navbar bg-dark border-bottom border-body" data-bs-theme="dark">
+    <nav className="navbar navbar-expand-lg bg-dark border-bottom border-body" data-bs-theme="dark">
       <div className="container-fluid">
         <Link className="navbar-brand" to="/">
           College Community
