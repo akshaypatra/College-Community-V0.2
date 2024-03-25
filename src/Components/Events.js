@@ -157,6 +157,103 @@ export default function Events() {
           value={searchTerm}
           onChange={handleSearch}
         />
+        <button
+          // ref={ref}
+          type="button"
+          className="btn btn-primary "  //d-none
+          style={{justifyContent:"center",marginLeft:"4vw",marginTop:'1vh'}}
+          data-bs-toggle="modal"
+          data-bs-target="#exampleModal"
+        >
+          Add Event
+        </button>
+        <div
+          className="modal fade"
+          id="exampleModal"
+          tabIndex="-1"
+          aria-labelledby="exampleModalLabel"
+          aria-hidden="true"
+        >
+          <div className="modal-dialog">
+            <div className="modal-content">
+              <div className="modal-header">
+                <h1 className="modal-title fs-5" id="exampleModalLabel">
+                  Add Annoucement
+                </h1>
+                <button
+                  type="button"
+                  className="btn-close"
+                  data-bs-dismiss="modal"
+                  aria-label="Close"
+                ></button>
+              </div>
+              <div className="modal-body">
+                <form>
+                  <div className="mb-3">
+                    <label htmlFor="etitle" className="form-label">
+                      Title:
+                    </label>
+                    <input
+                      type="text"
+                      className="form-control"
+                      id="etitle"
+                      name="etitle"
+                      // value={note.etitle}
+                      aria-describedby="emailHelp"
+                      // onChange={onChange}
+                    />
+                  </div>
+                  <div className="mb-3">
+                    <label htmlFor="edescription" className="form-label">
+                      {" "}
+                      Description:
+                    </label>
+                    <input
+                      type="text"
+                      className="form-control"
+                      id="edescription"
+                      name="edescription"
+                      // value={note.edescription}
+                      // onChange={onChange}
+                    />
+                  </div>
+                  <div className="mb-3">
+                    <label htmlFor="link" className="form-label">
+                      {" "}
+                      Registration Link:
+                    </label>
+                    <input
+                      type="text"
+                      className="form-control"
+                      id="link"
+                      name="link"
+                      // value={note.edescription}
+                      // onChange={onChange}
+                    />
+                  </div>
+                  
+                </form>
+              </div>
+              <div className="modal-footer">
+                <button
+                  // ref={refClose}
+                  type="button"
+                  className="btn btn-secondary"
+                  data-bs-dismiss="modal"
+                >
+                  Close
+                </button>
+                <button
+                  type="button"
+                  className="btn btn-primary"
+                  //  onClick={handleClick} disabled={note.etitle.length<1 || note.edescription.length<3}
+                >
+                  Post
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
     </div>
     <div className="EventSection">
           {events ? (
