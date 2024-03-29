@@ -186,7 +186,7 @@ const HelpAndSupport = () => {
                         placeholder="  Reply ..."
                         
                       />
-                      <a href="#" class="btn btn-primary mx-2" >
+                      <a href="/" class="btn btn-primary mx-2" >
                         Reply
                       </a>
                       <hr />
