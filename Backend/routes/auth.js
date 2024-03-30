@@ -8,7 +8,7 @@ const bcrypt = require("bcryptjs");
 const { query, validationResult } = require("express-validator");
 const jwt = require("jsonwebtoken");
 
-//const fetchuser=require('../middleware/fetchuser.js');
+const fetchuser=require('../middleware/fetchuser');
 
 
 
@@ -146,17 +146,17 @@ router.post(
 
 //Route 3: Get loggedin User Details using : POST "http://localhost:4000/api/auth/getuser" .  login required
 
-// router.post("/getuser",fetchuser,async (req, res) => {
-//     try {
-//       const userId =req.user.id;
-//       const user = await User.findOne({ _id: userId }).select("-password");
-//       res.send(user);
+router.post("/getuser",fetchuser,async (req, res) => {
+    try {
+      const userId =req.user.id;
+      const user = await User.findOne({ _id: userId }).select("-password");
+      res.send(user);
 
-//     } catch (error) {
-//       console.error(error.message);
-//       res.status(500).send("Internal server Error!");
-//     }
-//   }
-// );
+    } catch (error) {
+      console.error(error.message);
+      res.status(500).send("Internal server Error!");
+    }
+  }
+);
 
 module.exports = router;
