@@ -163,13 +163,13 @@ export default function Events() {
           className="btn btn-primary "  //d-none
           style={{justifyContent:"center",marginLeft:"4vw",marginTop:'1vh'}}
           data-bs-toggle="modal"
-          data-bs-target="#exampleModal"
+          data-bs-target="#addEventModal"
         >
           Add Event
         </button>
         <div
           className="modal fade"
-          id="exampleModal"
+          id="addEventModal"
           tabIndex="-1"
           aria-labelledby="exampleModalLabel"
           aria-hidden="true"
@@ -178,7 +178,7 @@ export default function Events() {
             <div className="modal-content">
               <div className="modal-header">
                 <h1 className="modal-title fs-5" id="exampleModalLabel">
-                  Add Annoucement
+                  Add Event
                 </h1>
                 <button
                   type="button"

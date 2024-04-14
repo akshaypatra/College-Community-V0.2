@@ -2,8 +2,13 @@ import React from "react";
 import { useEffect, useState } from "react";
 
 export default function Annoucements() {
+
+  //const host = "http://localhost:4000";
+
+
   //function to generate random string
   const randomColorGenerator = (array) => {
+
     // Check if the array is empty
     if (array.length === 0) {
       return null; // or any other value to indicate no elements in the array
@@ -34,6 +39,8 @@ export default function Annoucements() {
     "dark",
   ];
 
+
+
   //fetching annoucements
   const [announcements, setAnnouncements] = useState([]);
   const [searchTerm, setSearchTerm] = useState("");
@@ -41,11 +48,9 @@ export default function Annoucements() {
   useEffect(() => {
     const fetchAnnouncements = async () => {
       try {
-        // const response=await fetch('/Announcement.json');
-        // if (!response.ok) {
-        //   throw new Error('Network response was not ok');
-        // }
-        // const jsonData = await response.json();
+
+        
+        
         const jsonData = [
           {
             id: "1",
